@@ -1,27 +1,48 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-html{
-    font-family: Arial, Helvetica, sans-serif;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
-h1,h2,h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+h1,
+h2,
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.header{
-    padding: 56px 26px;
-    text-align: center;
-    background-color: rgb(215, 223, 223);
+.header {
+  padding: 56px 26px;
+  text-align: center;
+  background-color: rgb(215, 223, 223);
 }
 
-.main{
+.main {
   /*  padding: 16px;*/
   max-width: 800px;
   margin: 0 auto;
+}
 
+.main > * + * {
+  margin-top: 40px;
+  border-top: 1px solid black;
+}
+
+.navigation {
+  margin-right: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation:hover {
+  color: rgb(82, 83, 82);
+  font-size: 13px;
+}
+.navigation:active {
+  text-decoration: underline;
+  color: red;
 }
