@@ -19,9 +19,8 @@ h3 {
   text-align: center;
   background-color: rgb(215, 223, 223);
 }
-
+ 
 .main {
-  /*  padding: 16px;*/
   max-width: 800px;
   margin: 0 auto;
 }
@@ -46,10 +45,10 @@ h3 {
   text-decoration: underline;
   color: red;
 }
-
-::selection{
-    background-color: rgb(12, 245, 51);
+/* for the compled site */
+::selection {
+  background-color: rgb(12, 245, 51);
 }
-.funny_apps::after{
-    content: '😎';
+.funny_apps::after {
+  content: "😎";
 }
