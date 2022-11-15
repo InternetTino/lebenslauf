@@ -52,3 +52,9 @@ h3 {
 .funny_apps::after {
   content: "😎";
 }
+.experiences_heading{
+   display: inline-block;
+}
+.experiences_subheading{
+    display: inline-block;
+}
