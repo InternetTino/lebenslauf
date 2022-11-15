@@ -8,6 +8,7 @@ body {
 
 html {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 h1,
 h2,
@@ -15,23 +16,23 @@ h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .header {
-  padding: 56px 26px;
+  padding: 3.5rem 1.6rem;
   text-align: center;
   background-color: rgb(215, 223, 223);
 }
 
 .main {
-  max-width: 800px;
+  max-width: 70ch;
   margin: 0 auto;
 }
 
 .main > * + * {
-  margin-top: 40px;
-  border-top: 1px solid black;
+  margin-top: 2.5rem;
+  border-top: 0.06rem solid black;
 }
 
 .navigation {
-  margin-right: 20px;
+  margin-right: 1.25rem;
   font-weight: 800;
   text-decoration: none;
   color: black;
@@ -39,7 +40,7 @@ h3 {
 
 .navigation:hover {
   color: rgb(82, 83, 82);
-  font-size: 13px;
+  font-size: 0.8em;
 }
 .navigation:active {
   text-decoration: underline;
@@ -51,6 +52,7 @@ h3 {
 }
 .funny_apps::after {
   content: "😎";
+  
 }
 .experiences_heading {
   display: inline-block;
@@ -60,8 +62,18 @@ h3 {
 }
 .hire_me {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 0.625rem;
+  top: 0.625rem;
   background-color: rgb(144, 144, 233);
-  padding: 10px;
+  padding: 0.625rem;
+}
+
+.heading_group{
+    font-size: 3rem;
+}
+.my_heading{
+    font-size: 1em;
+}
+.funny_apps{
+    font-size: 0.25em;
 }
