@@ -19,7 +19,7 @@ h3 {
   text-align: center;
   background-color: rgb(215, 223, 223);
 }
- 
+
 .main {
   max-width: 800px;
   margin: 0 auto;
@@ -52,9 +52,16 @@ h3 {
 .funny_apps::after {
   content: "😎";
 }
-.experiences_heading{
-   display: inline-block;
+.experiences_heading {
+  display: inline-block;
 }
-.experiences_subheading{
-    display: inline-block;
+.experiences_subheading {
+  display: inline-block;
+}
+.hire_me {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: rgb(144, 144, 233);
+  padding: 10px;
 }
