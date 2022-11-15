@@ -46,3 +46,10 @@ h3 {
   text-decoration: underline;
   color: red;
 }
+
+::selection{
+    background-color: rgb(12, 245, 51);
+}
+.funny_apps::after{
+    content: '😎';
+}
