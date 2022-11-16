@@ -4,6 +4,7 @@
 
 body {
   --background-color: white;
+  --hire_me-background-color: #0c08fa;
   --text-color: black;
   --accent-color: #0cf533;
   --accent-text-color: black;
@@ -38,6 +39,7 @@ h3 {
   padding: 3.5rem 1.6rem;
   text-align: center;
   background-image: linear-gradient(var(--accent-color), rgb(250, 249, 249));
+  position: relative;
 }
 
 .main {
@@ -106,12 +108,23 @@ h3 {
 }
 .hire_me {
   position: absolute;
+  color: var(--background-color);
   right: 0.625rem;
   top: 0.625rem;
-  background-color: var(--accent-color);
+  background-color: var(--hire_me-background-color);
   padding: 0.625rem;
   border: 1px solid var(--nav-text-color);
+  opacity: 0.5;
   border-radius: 8px;
+  transform-origin: top right;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.header:hover .hire_me,
+.header:focus-within .hire_me {
+  opacity: 1;
+  transform: scale(1.5);
+  background-color: blueviolet;
 }
 
 @media screen and (min-width: 992px) {
@@ -119,6 +132,7 @@ h3 {
     position: fixed;
   }
 }
+
 @media print {
   .hire_me {
     display: none;
